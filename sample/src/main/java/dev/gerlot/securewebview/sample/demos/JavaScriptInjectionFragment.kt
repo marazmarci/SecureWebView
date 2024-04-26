@@ -89,7 +89,7 @@ class JavaScriptInjectionFragment: Fragment(), SecurableWebViewFragment {
 
     companion object {
 
-        private const val MALICIOUS_PARAMETER = "alert(\"Hello World\")"
+        private const val MALICIOUS_PARAMETER = "alert(%22Hello World%22)"
 
         private const val INJECTED_JAVASCRIPT = "javascript:void($MALICIOUS_PARAMETER)"
 
